@@ -1,4 +1,4 @@
-import { Domestic } from './Domestic.js';
+import { Domestic } from '../Domestic.js';
 
 class Cat extends Domestic { 
     constructor(name, mainColor, breed, weight) {
