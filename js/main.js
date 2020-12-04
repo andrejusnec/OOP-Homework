@@ -12,10 +12,4 @@ vezliukas.activity();
 vezliukas.animalGame(); 
 */
 
-const Nemo = new Gyvunai.Salmon('Marvin','Silver', 'River', 7.5);
-
-console.log(Nemo.swimms(2));
-console.log(Nemo.typeOf());
-console.log(Nemo.fishNetto(2.35));
-
 

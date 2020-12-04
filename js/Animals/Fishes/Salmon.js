@@ -4,16 +4,17 @@ class Salmon extends Fishes {
     constructor(name, mainColor, livesIn, weight) {
         super (name, mainColor, livesIn)
         this.weight = weight;
-        this.type = 'Predator'
+        this.type = 'predator'
         this.speed = 20;
         this.netto = 0;
-        this.loss = 0.67;
+        this.looseWeight = 0.67;
         this.meat = 'red';
     }
-    FishNetto(RawAmountkg) {
+    fishNetto(RawAmountkg) {
         if(typeof RawAmountkg === 'number'){
-            this.netto = RawAmountkg * this.loss;
-            console.log(`From ${RawAmount} kg of fish you will get ${this.loss} kg's of ${this.meat} meat`)
+            this.netto = RawAmountkg * this.looseWeight;
+            
+            console.log(`From ${RawAmountkg} kg of fish you will get ${parseFloat(this.netto).toFixed(2)} kg's of ${this.meat} meat`)
         } else {
             console.log(`I asked for weight of your fish! Keep your random text for internet and friends! `)
         }
