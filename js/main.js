@@ -13,3 +13,10 @@ vezliukas.animalGame();
 */
 
 
+const papuga = new Gyvunai.Parrot('Ara', 'Red', 20);
+const sakalas = new Gyvunai.Falcon('Zveris', 'Brown', 60)
+
+papuga.parrotWeight()
+papuga.randomSounds
+papuga.flyTo('South');
+sakalas.Hunt();
