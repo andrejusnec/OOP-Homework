@@ -9,24 +9,28 @@ class Birds extends Animal {
     flyTo(flyDirection) {
         if (typeof flyDirection !== 'string') {
             console.log('I need directions, like "south"!');
+            return false;
         }
-        if (flyDirection === '') {
+        let fly = flyDirection.toLowerCase();
+        switch (fly) {
+            case '' :
             console.log('Okey, no problem - i will stay at your place ;p');
-        }
-        if (flyDirection === 'South' || flyDirection === 'south') {
+            break;
+            case 'south' :
             console.log(`Its too late to fly ${flyDirection}! It's winter. ill stay here!`)
-        }
-        if (flyDirection === 'North' || flyDirection === 'north') {
+            break;
+            case 'north' :
             console.log(`Are you crazy to send me ${flyDirection}! I'll freeze there!`)
-        }
-        if (flyDirection === 'West' || flyDirection === 'West') {
+            break;
+            case 'west' :
             console.log(`I always liked ${flyDirection}! My dream was to become a CowBird!`)
-        }
-        if (flyDirection === 'East' || flyDirection === 'east') {
+            break;
+            case 'east': 
             console.log(`Yes boss, ${flyDirection} it is!`);
-        }
-        else {
+            break;
+            default:
             console.log(`I dont understand you, bro. Give me a direction, come on....`)
+            break;
         }
     }
 
